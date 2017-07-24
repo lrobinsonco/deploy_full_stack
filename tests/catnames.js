@@ -15,5 +15,10 @@ describe('catnames api', () => {
         done();
       });
   });
-  it('should ')
+  it('should add cat to database', (done) =>{
+    api.post('/catnames')
+    .send({name: 'myAwesomeCatName'})
+    .expect(200, done);
+
+  })
 });
