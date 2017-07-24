@@ -21,4 +21,4 @@ describe('catnames api', () => {
     .expect(200, done);
 
   })
-});
+})
